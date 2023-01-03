@@ -24,6 +24,9 @@ ul {
   width: 1200px;
   margin: 0 auto;
 }
+.section {
+  padding: 94px 0px;
+}
 .line {
   border-bottom: 1px solid #ececec;
 }
@@ -38,16 +41,15 @@ ul {
   margin: 24px auto;
   /* border: 1px solid red; */
 }
+.logo--primary {
+  color: black;
+}
 .navbar__links {
   display: flex;
   justify-content: center;
   align-items: center;
   /* border: 2px solid blue; */
 }
-.logo--primary {
-  color: black;
-}
-
 .navbar__items {
   display: flex;
   margin-left: 93px;
@@ -63,16 +65,8 @@ ul {
   line-height: 1.154;
   /* border: 1px solid red; */
 }
-.contacts {
-  display: flex;
-  /* border: 1px solid red; */
-}
-.tel {
-  margin-left: 50px;
-  /* border: 1px solid red; */
-}
 .navbar__content:not(.logo--primary),
-.contacts .contact {
+.contact {
   text-decoration: none;
   color: black;
   font-weight: 500;
@@ -80,8 +74,29 @@ ul {
   line-height: 1.143;
   /* border: 1px solid red; */
 }
+.contacts,
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #757575;
+  fill: #757575;
+  /* border: 1px solid red; */
+}
+.email {
+  /* border: 1px solid red; */
+}
+.tel {
+  margin-left: 50px;
+  /* border: 1px solid red; */
+}
+
 .logo-design--color {
   color: #2196f3;
+}
+.link {
+  color: #212121;
 }
 .link:hover,
 .contacts .contact:hover {
@@ -91,15 +106,15 @@ ul {
 .contacts .contact:focus {
   color: #2196f3;
 }
-.section {
-  padding: 94px 0px;
-}
 
 /*--------------- index.html - main ---------------*/
 
 .post-header {
   text-align: center;
-  background-color: #2f303a;
+}
+.post-header--background-img {
+  background: linear-gradient(#2f303a66, #2f303a66),
+    url("/images/order-service/order-service--background.jpg");
 }
 .post-header.section {
   padding: 200px 0;
@@ -133,12 +148,26 @@ ul {
   align-items: center;
   gap: 30px;
 }
+.icon--background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f4fa;
+  /* border: 1px solid red; */
+}
+.our-skills__icon {
+  margin: 30px 100px;
+}
+.skill:not(:last-child) {
+  /* border: 1px solid red; */
+}
 .skill__heading {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
   color: #212121;
   letter-spacing: 0.03em;
+  margin-top: 30px;
   margin-bottom: 10px;
 }
 .skill__description {
@@ -160,7 +189,7 @@ ul {
 }
 .our-team__items {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 .our-team__item {
@@ -173,16 +202,12 @@ ul {
   margin: 30px 0 10px 0;
 }
 .our-team__item .specialization {
-  margin: 10px 0 30px 0;
+  margin: 10px 0 16px 0;
 }
 
 .our-team.section {
   background-color: #f5f4fa;
 }
-.about-us__item:not(:last-child),
-.our-team__item:not(:last-child) {
-}
-
 .about-us__heading,
 .our-team__heading {
   color: #212121;
@@ -201,6 +226,25 @@ ul {
   color: #757575;
   font-size: 16px;
   line-height: 1.189;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 30px;
+  /* border: 1px solid red; */
+}
+.social-links__link {
+  fill: #afb1b8;
+  display: flex;
+  padding: 12px;
+  /* border: 1px solid red; */
+}
+.social-links__link:hover {
+  fill: white;
+  background-color: #2196f3;
+  border-radius: 50%;
 }
 
 /*--------------- portfolio.html ---------------*/
